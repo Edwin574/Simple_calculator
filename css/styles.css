@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap");
 .buttons {
-  padding: 1em;
   border-radius: 60%;
   border: none;
   background-color: rgba(138, 43, 226, 0.4);
@@ -16,10 +16,12 @@
 
 body {
   background-color: hsl(237deg, 14%, 26%);
+  font-family: "Antic Didone", serif;
+  font-weight: 700;
 }
 
 .main-section {
-  width: 40%;
+  width: 50%;
 }
 
 .toggle-area {

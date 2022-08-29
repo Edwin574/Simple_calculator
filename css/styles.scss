@@ -1,6 +1,7 @@
 
 @use './partials/mixins';
 @use './partials/variables';
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
 
 *{
     padding: 0;
@@ -9,9 +10,12 @@
 }
 body{
     background-color: hsl(237, 14%, 26%);;
+    font-family: 'Antic Didone', serif;
+    font-weight: 700;
+
 }
 .main-section {
-    width: 40%;
+    width: 50%;
     //media query
 }
 //switch button
@@ -29,4 +33,3 @@ body{
         border-radius: 50%;
     }
 }
-
