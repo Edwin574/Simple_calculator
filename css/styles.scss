@@ -1,0 +1,32 @@
+
+@use './partials/mixins';
+@use './partials/variables';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(237, 14%, 26%);;
+}
+.main-section {
+    width: 40%;
+    //media query
+}
+//switch button
+.toggle-area{
+    background-color: rgb(138, 43, 226,0.7);
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+    
+    .check{
+        background-color:white;
+        width: 25px;
+        height: 25px;
+        margin: .1em;
+        border-radius: 50%;
+    }
+}
+
