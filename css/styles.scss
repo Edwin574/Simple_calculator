@@ -1,6 +1,6 @@
 
 @use './partials/mixins';
-@use './partials/variables';
+@use './partials/variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
 
 *{
@@ -9,12 +9,12 @@
     box-sizing: border-box;
 }
 body{
-    background-color: hsl(237, 14%, 26%);
+    background-color: hsl(237, 14%, 2%);
     font-size: 1.6rem;
 
 }
 .main-section {
-    width: 30%;
+    width: 50%;
     //media query
 }
 //switch button
@@ -32,14 +32,25 @@ body{
         border-radius: 50%;
     }
 }
+.buttons-section{
+background:black;
+border: none;
+}
+
 .light-mode{
     @include mixins.flex-box(flex-end,center,row,wrap);
 }
 
 //light mode
 .light{
+background-color: $VeryLightGrayishBlue;
+.buttons-section{
 background-color: white;
 }
+
+}
+//media queries
+
 
 @media(max-width:768px){
     .main-section {

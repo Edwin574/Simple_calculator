@@ -19,12 +19,12 @@
 }
 
 body {
-  background-color: hsl(237deg, 14%, 26%);
+  background-color: hsl(237deg, 14%, 2%);
   font-size: 1.6rem;
 }
 
 .main-section {
-  width: 30%;
+  width: 50%;
 }
 
 .toggle-area {
@@ -41,6 +41,11 @@ body {
   border-radius: 50%;
 }
 
+.buttons-section {
+  background: black;
+  border: none;
+}
+
 .light-mode {
   display: flex;
   justify-content: flex-end;
@@ -50,6 +55,9 @@ body {
 }
 
 .light {
+  background-color: hsl(236deg, 33%, 92%);
+}
+.light .buttons-section {
   background-color: white;
 }
 
