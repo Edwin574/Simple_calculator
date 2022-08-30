@@ -13,47 +13,47 @@
 
 
 <body>
-    <div class="main-section  mx-auto">
+    <div class="main-section  mx-auto my-auto">
         <div class="custom-area d-flex justify-content-between align-items-center text-white">
             <p>Name</p>
-            <div class="light-switch">
 
-                <div class="toggle-area d-flex align-items-center">
-                    <div class="check">t</div>
-                </div>
 
+            <div class="toggle-area d-flex align-items-center" id="light-switch">
+                <div class="check"></div>
             </div>
+
         </div>
         <div class="answer-area bg-dark p-4 text-white border-bottom">
             answer-area
         </div>
-        <div class="buttons-section border border-dark p-1 bg-dark d-flex flex-nowrap flex-column gap-1 justify-content-center">
-            <div class="row flex-nowrap">
+        <div
+            class="buttons-section border border-dark p-1 bg-dark d-flex flex-nowrap flex-column gap-1 justify-content-center align-items-center">
+            <div class="row flex-nowrap gap-2">
                 <button class="buttons">C</button>
                 <button class="buttons text-center"><span>&#8730;</span></button>
                 <button class="buttons">%</button>
                 <button class="buttons">÷</button>
             </div>
-            <div class="row flex-nowrap">
+            <div class="row flex-nowrap gap-2">
                 <button class="buttons">7</button>
                 <button class="buttons">8</button>
                 <button class="buttons">9</button>
                 <button class="buttons">x</button>
             </div>
 
-            <div class="row flex-nowrap">
+            <div class="row flex-nowrap gap-2">
                 <button class="buttons">4</button>
                 <button class="buttons">5</button>
                 <button class="buttons">6</button>
                 <button class="buttons">-</button>
             </div>
-            <div class="row flex-nowrap">
+            <div class="row flex-nowrap gap-2">
                 <button class="buttons">1</button>
                 <button class="buttons">2</button>
                 <button class="buttons">3</button>
                 <button class="buttons">+</button>
             </div>
-            <div class="row flex-nowrap">
+            <div class="row flex-nowrap gap-2">
                 <button class="buttons">H</button>
                 <button class="buttons">0</button>
                 <button class="buttons">.</button>
@@ -64,6 +64,7 @@
 
         </div>
     </div>
+    <script src="./js/app.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

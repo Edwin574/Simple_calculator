@@ -6,6 +6,10 @@
   color: white;
   width: 80px;
   height: 80px;
+  transition: 0.4s ease-in-out;
+}
+.buttons:hover {
+  background-color: rgba(138, 43, 226, 0.7);
 }
 
 * {
@@ -16,12 +20,11 @@
 
 body {
   background-color: hsl(237deg, 14%, 26%);
-  font-family: "Antic Didone", serif;
-  font-weight: 700;
+  font-size: 1.6rem;
 }
 
 .main-section {
-  width: 50%;
+  width: 30%;
 }
 
 .toggle-area {
@@ -36,4 +39,22 @@ body {
   height: 25px;
   margin: 0.1em;
   border-radius: 50%;
+}
+
+.light-mode {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.light {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    width: 80%;
+  }
 }/*# sourceMappingURL=styles.css.map */

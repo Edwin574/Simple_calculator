@@ -9,13 +9,12 @@
     box-sizing: border-box;
 }
 body{
-    background-color: hsl(237, 14%, 26%);;
-    font-family: 'Antic Didone', serif;
-    font-weight: 700;
+    background-color: hsl(237, 14%, 26%);
+    font-size: 1.6rem;
 
 }
 .main-section {
-    width: 50%;
+    width: 30%;
     //media query
 }
 //switch button
@@ -31,5 +30,20 @@ body{
         height: 25px;
         margin: .1em;
         border-radius: 50%;
+    }
+}
+.light-mode{
+    @include mixins.flex-box(flex-end,center,row,wrap);
+}
+
+//light mode
+.light{
+background-color: white;
+}
+
+@media(max-width:768px){
+    .main-section {
+        width: 80%;
+        //media query
     }
 }
