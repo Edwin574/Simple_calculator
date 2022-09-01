@@ -47,7 +47,13 @@ digits.forEach((element) => {
                 product = (parseInt(newValue[0])) - (parseInt(newValue[1]))
                 display.innerHTML = ''
                 display.append(product)
+            } else {
+                display.innerHTML = ''
+
+                display.append(parseInt(number))
             }
+              
+            
         
         })
     })
