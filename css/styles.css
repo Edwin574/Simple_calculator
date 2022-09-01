@@ -57,12 +57,24 @@ body {
 .light {
   background-color: white;
 }
+.light p {
+  color: black;
+}
 .light .answer-area {
-  color: white;
-  background-color: red;
+  color: black;
+  background-color: rgba(138, 43, 226, 0.7);
+  border: 1px solid black;
 }
 .light .buttons-section {
-  background-color: hsl(236deg, 33%, 92%);
+  background-color: white;
+}
+.light .buttons {
+  border-radius: 60%;
+  background-color: rgba(138, 43, 226, 0.7);
+  color: black;
+}
+.light .buttons:hover {
+  background-color: rgba(138, 43, 226, 0.4);
 }
 
 @media (max-width: 768px) {

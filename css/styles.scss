@@ -48,14 +48,27 @@ body {
 .light {
     background-color: white;
 
+    p {
+        color: black;
+    }
+
     .answer-area {
-        color: white;
-        background-color:red;
+        color:black;
+        background-color:$blueviolet-light;
+        border: 1px solid black;
     }
 
     .buttons-section {
-        background-color: $VeryLightGrayishBlue;
+        background-color: white;
     }
+    .buttons{
+        border-radius: 60%;
+        background-color:$blueviolet-light;
+        color:black;
+        &:hover{
+        background-color: $blueviolet;
+        }
+        }
 
 }
 
