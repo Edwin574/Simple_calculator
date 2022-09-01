@@ -55,10 +55,14 @@ body {
 }
 
 .light {
-  background-color: hsl(236deg, 33%, 92%);
+  background-color: white;
+}
+.light .answer-area {
+  color: white;
+  background-color: red;
 }
 .light .buttons-section {
-  background-color: white;
+  background-color: hsl(236deg, 33%, 92%);
 }
 
 @media (max-width: 768px) {

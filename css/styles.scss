@@ -1,58 +1,68 @@
-
 @use './partials/mixins';
 @use './partials/variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: hsl(237, 14%, 2%);
     font-size: 1.6rem;
 
 }
+
 .main-section {
     width: 50%;
     //media query
 }
+
 //switch button
-.toggle-area{
-    background-color: rgb(138, 43, 226,0.7);
+.toggle-area {
+    background-color: rgb(138, 43, 226, 0.7);
     width: 50px;
     height: 30px;
     border-radius: 20px;
-    
-    .check{
-        background-color:white;
+
+    .check {
+        background-color: white;
         width: 25px;
         height: 25px;
         margin: .1em;
         border-radius: 50%;
     }
 }
-.buttons-section{
-background:black;
-border: none;
+
+.buttons-section {
+    background: black;
+    border: none;
 }
 
-.light-mode{
-    @include mixins.flex-box(flex-end,center,row,wrap);
+.light-mode {
+    @include mixins.flex-box(flex-end, center, row, wrap);
 }
 
 //light mode
-.light{
-background-color: $VeryLightGrayishBlue;
-.buttons-section{
-background-color: white;
-}
+.light {
+    background-color: white;
+
+    .answer-area {
+        color: white;
+        background-color:red;
+    }
+
+    .buttons-section {
+        background-color: $VeryLightGrayishBlue;
+    }
 
 }
+
 //media queries
 
 
-@media(max-width:768px){
+@media(max-width:768px) {
     .main-section {
         width: 80%;
         //media query
