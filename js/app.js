@@ -9,7 +9,7 @@ const squareRoot = document.querySelector('.square-root')
 const equal = document.querySelector('.equal-sign')
 const percent = document.querySelector('.percentage')
 const multiply = document.querySelector('.multiply')
-
+const decimal=document.querySelector('.decimal')
 //light switch
 
 lightswitch.addEventListener("click", () => {
@@ -73,7 +73,10 @@ operators.forEach((symbol) => {
         display.append(operator);
     });
 });
-
+//appending decimal
+decimal.addEventListener('click', (e) => {
+    display.append(e.target.innerText)
+})
 //squareroot
 
 squareRoot.addEventListener('click', () => {
