@@ -7,6 +7,8 @@ const digits = document.querySelectorAll(".digit");
 const operators = document.querySelectorAll(".operator");
 const squareRoot = document.querySelector('.square-root')
 const equal = document.querySelector('.equal-sign')
+const percent = document.querySelector('.percentage')
+const multiply = document.querySelector('.multiply')
 
 //light switch
 
@@ -15,19 +17,54 @@ lightswitch.addEventListener("click", () => {
     body.classList.toggle("light");
 });
 
-//numeric buttons
+//getting values from numeric buttons
 
 digits.forEach((element) => {
     element.addEventListener("click", (e) => {
-        let number = parseInt(e.target.innerText);
-        display.append(number);
-        // console.log(display.innerHTML);
-    });
-});
+        let value = e.target.innerText
+        display.append(value);
+        let number = display.innerHTML
 
+
+        equal.addEventListener('click', () => {
+            if (number.includes('x')) {
+                let newValue = number.split('x')
+                let product = (parseInt(newValue[0])) * (parseInt(newValue[1]))
+                display.innerHTML = ''
+                display.append(product)
+            } else if (number.includes('÷')) {
+                newValue = number.split('÷')
+                product = (parseInt(newValue[0])) / (parseInt(newValue[1]))
+                display.innerHTML = ''
+                display.append(product)
+            } else if (number.includes('+')) {
+                newValue = number.split('+')
+                product = (parseInt(newValue[0])) + (parseInt(newValue[1]))
+                display.innerHTML = ''
+                display.append(product)
+            } else if (number.includes('-')) {
+                newValue = number.split('-')
+                product = (parseInt(newValue[0])) - (parseInt(newValue[1]))
+                display.innerHTML = ''
+                display.append(product)
+            }
+        
+        })
+    })
+
+
+
+})
+
+
+
+
+
+//clear button
 clear.addEventListener("click", () => {
     display.innerHTML = "";
 });
+
 //appending mathematical operators
 operators.forEach((symbol) => {
     symbol.addEventListener("click", (e) => {
@@ -40,7 +77,7 @@ operators.forEach((symbol) => {
 //squareroot
 
 squareRoot.addEventListener('click', () => {
-let answer=Math.sqrt(parseInt(display.innerHTML))
+    let answer = Math.sqrt(parseInt(display.innerHTML))
     console.log(answer)
     equal.addEventListener('click', () => {
         display.innerHTML = ''
@@ -48,3 +85,10 @@ let answer=Math.sqrt(parseInt(display.innerHTML))
     })
 })
 //percentage
+percent.addEventListener('click', () => {
+    let answer = (parseInt(display.innerHTML) / 100)
+    equal.addEventListener('click', () => {
+        display.innerHTML = ''
+        display.append(answer)
+    })
+})
