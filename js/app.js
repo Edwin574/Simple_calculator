@@ -17,7 +17,9 @@ lightswitch.addEventListener("click", () => {
     body.classList.toggle("light");
 });
 
+
 //getting values from numeric buttons
+let results;
 
 digits.forEach((element) => {
     element.addEventListener("click", (e) => {
@@ -52,6 +54,8 @@ digits.forEach((element) => {
 
                 display.append(parseInt(number))
             }
+            
+            
               
             
         
@@ -75,6 +79,11 @@ clear.addEventListener("click", () => {
 operators.forEach((symbol) => {
     symbol.addEventListener("click", (e) => {
         let operator = e.target.innerText;
+
+        // results = `${parseInt(display.textContent)}${oper} `
+
+        // console.log(results)
+
 
         display.append(operator);
     });

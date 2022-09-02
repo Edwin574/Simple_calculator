@@ -39,6 +39,7 @@ body {
   height: 25px;
   margin: 0.1em;
   border-radius: 50%;
+  transition: 0.5s ease-in-out;
 }
 
 .buttons-section {
